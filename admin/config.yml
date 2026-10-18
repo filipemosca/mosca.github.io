@@ -1,0 +1,126 @@
+backend:
+  name: github
+  repo: filipemosca/mosca.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.moxk.workers.dev
+site_url: https://mosca.net.br
+display_url: https://mosca.net.br
+locale: pt
+local_backup: true
+media_folder: assets/img
+public_folder: /assets/img
+collections:
+- name: posts
+  label: Posts do blog
+  label_singular: post
+  folder: _posts
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_cardio
+  label: Quadro Clínico · Cardio
+  label_singular: post
+  folder: medicina/_posts/cardio
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_endocrino
+  label: Quadro Clínico · Endocrino
+  label_singular: post
+  folder: medicina/_posts/endocrino
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_hemato
+  label: Quadro Clínico · Hemato
+  label_singular: post
+  folder: medicina/_posts/hemato
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_infecto
+  label: Quadro Clínico · Infecto
+  label_singular: post
+  folder: medicina/_posts/infecto
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_pneumo
+  label: Quadro Clínico · Pneumo
+  label_singular: post
+  folder: medicina/_posts/pneumo
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: qc_rascunhos
+  label: Quadro Clínico · Rascunhos
+  label_singular: rascunho
+  folder: medicina/_drafts
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: boardgames
+  label: Páginas · Jogos
+  label_singular: página
+  folder: boardgames
+  extension: md
+  format: frontmatter
+  create: false
+  delete: false
+  slug: '{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Texto, name: body, widget: markdown}
+- name: paginas
+  label: Páginas · Avulsas
+  files:
+  - name: sobre
+    label: Sobre
+    file: sobre.md
+    format: frontmatter
+    fields:
+    - {label: Título, name: title, widget: string}
+    - {label: Texto, name: body, widget: markdown}
