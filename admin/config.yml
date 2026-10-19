@@ -35,13 +35,12 @@ collections:
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Imagem, name: image, widget: image, required: false}
   - {label: Texto, name: body, widget: markdown}
-  - {name: draft, label: Draft, widget: boolean }
+  - {label: Publicado, name: published, widget: boolean, default: true}
   table_columns:
   - title
   - date
   - tags
-  - draft
-
+  - published
   
 - name: medicina
   label: Medicina
