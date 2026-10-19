@@ -23,73 +23,30 @@ collections:
   - {label: Título, name: title, widget: string}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
-- name: qc_cardio
-  label: Quadro Clínico · Cardio
+- name: medicina
+  label: Medicina
   label_singular: post
-  folder: medicina/_posts/cardio
+  folder: medicina/_posts
   extension: md
   format: frontmatter
   create: true
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
   summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Texto, name: body, widget: markdown}
-- name: qc_endocrino
-  label: Quadro Clínico · Endocrino
-  label_singular: post
-  folder: medicina/_posts/endocrino
-  extension: md
-  format: frontmatter
-  create: true
-  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Texto, name: body, widget: markdown}
-- name: qc_hemato
-  label: Quadro Clínico · Hemato
-  label_singular: post
-  folder: medicina/_posts/hemato
-  extension: md
-  format: frontmatter
-  create: true
-  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Texto, name: body, widget: markdown}
-- name: qc_infecto
-  label: Quadro Clínico · Infecto
-  label_singular: post
-  folder: medicina/_posts/infecto
-  extension: md
-  format: frontmatter
-  create: true
-  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Texto, name: body, widget: markdown}
-- name: qc_pneumo
-  label: Quadro Clínico · Pneumo
-  label_singular: post
-  folder: medicina/_posts/pneumo
-  extension: md
-  format: frontmatter
-  create: true
-  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  summary: '{{title}}'
+  nested:
+    depth: 2
+    subfolders: false
+  view_filters:
+  - {label: Cardio, field: tags, pattern: cardio}
+  - {label: Endocrino, field: tags, pattern: endocrino}
+  - {label: Hemato, field: tags, pattern: hemato}
+  - {label: Infecto, field: tags, pattern: infecto}
+  - {label: Pneumo, field: tags, pattern: pneumo}
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
 - name: qc_rascunhos
-  label: Quadro Clínico · Rascunhos
+  label: Medicina · Rascunhos
   label_singular: rascunho
   folder: medicina/_drafts
   extension: md
