@@ -21,8 +21,17 @@ collections:
   summary: '{{title}}'
   view_groups:
   - {label: Tag, field: tags}
+  view_filters:
+  - {label: Canetas, field: tags, pattern: 'Canetas'}
+  - {label: Eletrônica, field: tags, pattern: 'Eletronica'}
+  - {label: Estudos, field: tags, pattern: 'Estudos'}
+  - {label: Futebol, field: tags, pattern: 'Futebol'}
+  - {label: Linux, field: tags, pattern: 'Linux'}
+  - {label: Livros, field: tags, pattern: 'Livros'}
+  - {label: Tech, field: tags, pattern: 'Tech'}
   fields:
   - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
 - name: medicina
@@ -39,8 +48,17 @@ collections:
     subfolders: false
   view_groups:
   - {label: Tag, field: tags}
+  view_filters:
+  - {label: Cardio, field: tags, pattern: 'Cardio'}
+  - {label: Dermato, field: tags, pattern: 'Dermato'}
+  - {label: Endocrino, field: tags, pattern: 'Endocrino'}
+  - {label: Hemato, field: tags, pattern: 'Hemato'}
+  - {label: Infecto, field: tags, pattern: 'Infecto'}
+  - {label: Reumato, field: tags, pattern: 'Rreumato'}
+  - {label: UTI, field: tags, pattern: 'UTI'}
   fields:
   - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
 - name: qc_rascunhos
