@@ -6,6 +6,9 @@ backend:
 site_url: https://mosca.net.br
 display_url: https://mosca.net.br
 locale: pt
+slug:
+  encoding: ascii
+  clean_accents: true
 local_backup: true
 media_folder: assets/img
 public_folder: /assets/img
