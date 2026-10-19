@@ -1,6 +1,8 @@
 ---
 title: "Tablet ou notebook: qual o melhor para minha rotina de estudos"
-tags: Estudos Tech
+tags:
+  - Estudos
+  - Tech
 ---
 
 Sempre fui um cara de computador. Desde a escola, era nele que eu fazia pesquisas e trabalhos, na faculdade isso só se intensificou: eu chegava das aulas, sentava e estudava resumindo capítulos de livros em documentos de texto digitados. No meio da graduação comprei um **HP Stream 11** — um netbook de processamento fraquinho, mas suficiente para redigir documentos durante as aulas. Rodava um Linux bem leve, o Debian Mate, e na época me atendeu muito bem.
