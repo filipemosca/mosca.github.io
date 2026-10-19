@@ -13,6 +13,8 @@ Mas recentemente descobri que existem volantes com o tal do "Force Feed Back"  q
 
 E ainda bem que decidi voltar pra esse mundo dos jogos de corrida, mas dessa vez com um volante bom de verdade. A experiência é incrível. Realmente parece que você está dirigindo um carro. Nas curvas o volante fica mais pesado simulando a força G no volante. Quando o carro derrapa ou escapa uma traseira ou dianteira também é possível sentir no volante. Agora sim parece um simulador de corrida.
 
+![](/assets/img/Jogos/20260925_134049.jpg)
+
 Estou jogando bastante o Assetto Corsa Competizone e o Le Mans Ultimate. Depois escrevo textos sobre minha experiência com esses jogos.
 
 Comecei a acompanhar alguns subreddits com outros entusiastas simuladores de corridas e a brincadeira para alguns vai escalando bastante. Alguns emocionados montam cockpits inteiros no quarto de casa extremamente imersivos, mas aí é outro nível. Por ora vou treinando pra melhorar meus tempos de volta e jogando devagarinho nas corridas online ranqueadas pra melhorar meu "Safety Rating". Depois vou contando mais como está sendo essa experiência mas já digo que é maravilhosa e bastante relaxante.
