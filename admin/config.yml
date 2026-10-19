@@ -19,6 +19,8 @@ collections:
   create: true
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
   summary: '{{title}}'
+  view_groups:
+  - {label: Tag, field: tags}
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Tags, name: tags, widget: list, required: false}
@@ -35,12 +37,8 @@ collections:
   nested:
     depth: 2
     subfolders: false
-  view_filters:
-  - {label: Cardio, field: tags, pattern: cardio}
-  - {label: Endocrino, field: tags, pattern: endocrino}
-  - {label: Hemato, field: tags, pattern: hemato}
-  - {label: Infecto, field: tags, pattern: infecto}
-  - {label: Pneumo, field: tags, pattern: pneumo}
+  view_groups:
+  - {label: Tag, field: tags}
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Tags, name: tags, widget: list, required: false}
