@@ -27,17 +27,17 @@ collections:
   - {label: Linux, field: tags, pattern: 'Linux'}
   - {label: Livros, field: tags, pattern: 'Livros'}
   - {label: Tech, field: tags, pattern: 'Tech'}
-  fields:
-  - { name: title, label: Title }
-  - { name: date, label: Published Date, widget: datetime }
-  - {label: Tags, name: tags, widget: list, required: false}
-  - { name: draft, label: Draft, widget: boolean }
   table_columns:
   - title
   - date
   - tags
-  - draft
-  
+  - published
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}
 - name: medicina
   label: Medicina
   label_singular: post
@@ -60,44 +60,18 @@ collections:
   - {label: Infecto, field: tags, pattern: 'Infecto'}
   - {label: Reumato, field: tags, pattern: 'Reumato'}
   - {label: UTI, field: tags, pattern: 'UTI'}
+  table_columns:
+  - title
+  - date
+  - tags
+  - published
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}
 - name: qc_rascunhos
   label: Medicina · Rascunhos
   label_singular: rascunho
-  folder: medicina/_drafts
-  extension: md
-  format: frontmatter
-  create: true
-  slug: '{{slug}}'
-  summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Texto, name: body, widget: markdown}
-- name: boardgames
-  label: Páginas · Jogos
-  label_singular: página
-  folder: boardgames
-  extension: md
-  format: frontmatter
-  create: false
-  delete: false
-  slug: '{{slug}}'
-  summary: '{{title}}'
-  fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Texto, name: body, widget: markdown}
-- name: paginas
-  label: Páginas · Avulsas
-  files:
-  - name: sobre
-    label: Sobre
-    file: sobre.md
-    format: frontmatter
-    fields:
-    - {label: Título, name: title, widget: string}
-    - {label: Texto, name: body, widget: markdown}
+  folder
