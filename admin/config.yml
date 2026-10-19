@@ -19,8 +19,6 @@ collections:
   create: true
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
   summary: '{{title}}'
-  view_groups:
-  - {label: Tag, field: tags}
   view_filters:
   - {label: Canetas, field: tags, pattern: 'Canetas'}
   - {label: Eletrônica, field: tags, pattern: 'Eletronica'}
@@ -38,7 +36,7 @@ collections:
   - title
   - date
   - tags
-  - published
+  - draft
   
 - name: medicina
   label: Medicina
