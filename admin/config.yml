@@ -35,6 +35,11 @@ collections:
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Imagem, name: image, widget: image, required: false}
   - {label: Texto, name: body, widget: markdown}
+  table_columns:
+  - title
+  - date
+  - tags
+  - draft
 - name: medicina
   label: Medicina
   label_singular: post
