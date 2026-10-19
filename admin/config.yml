@@ -30,12 +30,10 @@ collections:
   - {label: Livros, field: tags, pattern: 'Livros'}
   - {label: Tech, field: tags, pattern: 'Tech'}
   fields:
-  - {label: Título, name: title, widget: string}
-  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
+  - { name: title, label: Title }
+  - { name: date, label: Published Date, widget: datetime }
   - {label: Tags, name: tags, widget: list, required: false}
-  - {label: Imagem, name: image, widget: image, required: false}
-  - {label: Texto, name: body, widget: markdown}
-  - {label: Publicado, name: published, widget: boolean, default: true}
+  - { name: draft, label: Draft, widget: boolean }
   table_columns:
   - title
   - date
