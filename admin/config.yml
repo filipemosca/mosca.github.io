@@ -27,17 +27,20 @@ collections:
   - {label: Linux, field: tags, pattern: 'Linux'}
   - {label: Livros, field: tags, pattern: 'Livros'}
   - {label: Tech, field: tags, pattern: 'Tech'}
-  table_columns:
-  - title
-  - date
-  - tags
-  - published
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
   - {label: Publicado, name: published, widget: boolean, default: true}
+  table_columns:
+  - title
+  - date
+  - tags
+  - published
+  - { field: "{{date | date('YYYY-MM-DD')}}", label: Published }
+
+  
 - name: medicina
   label: Medicina
   label_singular: post
