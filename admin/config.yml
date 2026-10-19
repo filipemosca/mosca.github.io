@@ -29,12 +29,15 @@ collections:
   - {label: Tech, field: tags, pattern: 'Tech'}
   fields:
   - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}
   table_columns:
   - title
   - { field: "{{date | date('MMM D, YYYY')}}", label: Data }
   - tags
+  - published
   
 - name: medicina
   label: Medicina
