@@ -1,6 +1,9 @@
 ---
 title: A melhor caneta tinteiro
-tag: Canetas
+date: 2026-06-22
+tags:
+  - Canetas
+published: true
 ---
 
 Há alguns anos conheci as canetas tinteiro e mergulhei nesse hobby, com algum atraso, pois achava que seria muito caro. Na prática, existem muitas canetas tinteiro com preço bem em conta, ainda mais considerando que são canetas capazes de durar a vida toda.

@@ -1,7 +1,9 @@
 ---
 title: Como digitar — e – no linux
+date: 2025-09-01
 tags:
     - Linux
+published: true
 ---
 
 Gosto muito de digitar usando esses dois símbolos. Aqui vai o passo a passo pra conseguir digitá-los:

@@ -1,6 +1,9 @@
 ﻿---
 title: De olho no Xteink X4
-tags: Livros
+date: 2026-07-03
+tags:
+    - Livros
+published: true
 ---
 
 Começou a aparecer vários vídeos pra mim no YouTube sobre o Ereader portatil Xteink X4, principalmente os vídeos do Izzy Nobre. Não resisti à estética dele e acabei indo assistir esses vídeos… caí na armadilha. Agora estou com vontade de comprar um. Só tem um problema: eu já tenho um Kindle (velho, mas em perfeito funcionamento) que está encostado há meses sem uso. Se não uso o ereader que já tenho, pra que vou comprar outro pra continuar sem usar?

@@ -1,6 +1,9 @@
 ---
 title: Aprendendo eletrônica
-tag: Eletronica
+date: 2026-01-15
+tags:
+  - Eletronica
+published: true
 ---
 
 Vem aí um novo hobbie, a eletrônica. A ideia surgiu quando observei que no meu apartamento tem um ponto em uma das janelas que bate sol forte praticamente o dia todo. Pensei que seria o lugar perfeito para colocar um painel solar e gerar um pouco de energia. Pesquisei um pouco sobre a viabilidade do projeto e o quanto eu conseguiria gerar com um painel pequeno e barato. Foi aí que vi projetos de pequenos paineis recarregando baterias e até mesmo celulares.

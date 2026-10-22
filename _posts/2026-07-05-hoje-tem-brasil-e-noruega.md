@@ -1,6 +1,9 @@
 ﻿---
 title: Hoje tem Brasil x Noruega
-tags: Futebol, CopaDoMundo
+date: 2026-07-05
+tags:
+    - Futebol
+published: true
 ---
 
 Antes da copa começar eu estava bem descrente que tivéssemos alguma chance de conseguir o Hexa esse ano. Mas os jogos começaram e o time foi melhorando e jogando melhor a cada partida. O jogo contra o Japão foi muito bom, começamos atrás no placar e os jogadores mantiveram a concentração para buscar o empate e depois a virada, tudo no tempo regulamentar. Ainda assim, o medo da eliminação por seleções europeias no mata a mata continua. Ao longo de toda a copa fui evitando criar muita expectativa para não me decepcionar demais, mas não importa, a decepção sempre vai ser grande, otimista ou não.

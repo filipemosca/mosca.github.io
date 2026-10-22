@@ -1,6 +1,9 @@
 ﻿---
 title: "Depressão profunda: Brasil mais uma vez cai pra primeira seleção europeia que aparece"
-tags: Futebol CopaDoMundo
+date: 2026-07-05
+tags:
+    - Futebol
+published: true
 ---
 
 

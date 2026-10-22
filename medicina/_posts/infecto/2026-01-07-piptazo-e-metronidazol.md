@@ -1,6 +1,6 @@
 ---
 title: Piptazo com metronidazol faz sentido?
-tag: infecto
+tags: [Infecto]
 ---
 
 Esses dias me deparei com uma prescrição contendo ao mesmo tempo a piperacilina-tazobactam e o metronidazol para o tratamento de uma infecção intra-abdominal. Imediatamente me veio na mente pensamentos de julgamento.
