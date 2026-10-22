@@ -6,6 +6,9 @@ backend:
 site_url: https://mosca.net.br
 display_url: https://mosca.net.br
 locale: pt
+logo:
+  src: /favicon.ico
+  show_in_header: false
 slug:
   encoding: ascii
   clean_accents: true
