@@ -1,6 +1,7 @@
 ---
 title: Como digitar — e – no linux
-tag: Linux
+tags:
+    - Linux
 ---
 
 Gosto muito de digitar usando esses dois símbolos. Aqui vai o passo a passo pra conseguir digitá-los:
