@@ -7,8 +7,8 @@ site_url: https://mosca.net.br
 display_url: https://mosca.net.br
 locale: pt
 logo:
-  src: /favicon.ico
-  show_in_header: false
+  src: /favicon-admin.png
+  show_in_header: true
 slug:
   encoding: ascii
   clean_accents: true
