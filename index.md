@@ -10,7 +10,7 @@ Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especial
 
 - [Jogos de tabuleiro](/boardgames/jogos-tabuleiro)
 - [Jogos de baralho](/boardgames/baralho)
-- [Criado de acrônimos](hhtps://acronimos.mosca.net.br) para mnemônicos
+- [Criado de acrônimos](https://acronimos.mosca.net.br) para mnemônicos
 - Aprendendo a digitar mais rápido: [TypingClub](https://www.edclub.com/sportal/program-21.game)
 
 ## Todas as postagens
