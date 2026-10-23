@@ -7,8 +7,10 @@ title: "Blog do Mosca"
 
 Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especialização) de clínica médica. Esse é meu espaço na internet para compartilhar meus hobbies e escrever sobre a medicina.
 
+
 - [Jogos de tabuleiro](/boardgames/jogos-tabuleiro)
 - [Jogos de baralho](/boardgames/baralho)
+- [Criado de acrônimos](acronimos.mosca.net.br) para mnemônicos
 - Aprendendo a digitar mais rápido: [TypingClub](https://www.edclub.com/sportal/program-21.game)
 
 ## Todas as postagens
