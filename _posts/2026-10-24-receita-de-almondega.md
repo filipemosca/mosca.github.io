@@ -33,4 +33,6 @@ published: false
 - Para versão assada: 200 °C por \~20 min, virando na metade.
 - Congelam bem, cruas ou cozidas no molho.
 
-Bom apetite!
+Dá pra congelar as almôndegas e ir fazendo porções ao longo da semana. Só tirar do congelador e assar diretamente na air fryer. Também deixo molho de tomate congelado e descongelo na hora de preparar, apenas precisando cozinhar o macarrão.
+
+Também fica gostoso fazer com molho de queijo gorgonzola.
