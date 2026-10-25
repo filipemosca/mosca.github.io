@@ -6,6 +6,7 @@ backend:
 site_url: https://mosca.net.br
 display_url: https://mosca.net.br
 locale: pt
+app_title: MoscaPanel
 logo:
   src: /favicon-admin.png
   show_in_header: true
@@ -17,7 +18,8 @@ media_folder: assets/img
 public_folder: /assets/img
 collections:
 - name: posts
-  label: Posts do blog
+  label: Posts
+  icon: article
   label_singular: post
   folder: _posts
   extension: md
@@ -47,6 +49,7 @@ collections:
   
 - name: medicina
   label: Medicina
+  icon: stethoscope
   label_singular: post
   folder: medicina/_posts
   extension: md
@@ -92,7 +95,7 @@ collections:
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
 - name: boardgames
-  label: Páginas · Jogos
+  label: Jogos
   label_singular: página
   folder: boardgames
   extension: md
@@ -105,7 +108,8 @@ collections:
   - {label: Título, name: title, widget: string}
   - {label: Texto, name: body, widget: markdown}
 - name: paginas
-  label: Páginas · Avulsas
+  label: Páginas
+  icon: pages
   files:
   - name: sobre
     label: Sobre
