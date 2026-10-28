@@ -6,7 +6,7 @@ tags:
 published: true
 ---
 
-**Ingredientes**
+## **Ingredientes**
 
 - 500 g de patinho moído
 - 1 fatia de pão de forma
@@ -17,7 +17,7 @@ published: true
 - Sal a gosto
 - Molho de tomate especial do Mosca (a receita desse vai ficar pra outro momento)
 
-**Preparo**
+## **Preparo**
 
 1. Misture numa tijela a carne moida com: pão de forma, ovo, alho, salsa, sal e pimenta.
 2. É só ir "sovando" a massa como se tivesse fazendo massa de pizza, até ficar homogênea.
