@@ -16,6 +16,19 @@ slug:
 local_backup: true
 media_folder: assets/img
 public_folder: /assets/img
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 10000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+          width: 900
+          height: 500
+
 collections:
 - name: posts
   label: Posts
