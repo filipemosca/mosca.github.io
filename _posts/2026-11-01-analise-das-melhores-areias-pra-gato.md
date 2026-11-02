@@ -3,12 +3,14 @@ title: Análise das melhores areias pra gatos
 date: 2026-11-01
 tags:
   - gatos
-published: false
+published: true
 ---
 
 **OBS: Estou testando novas areias e ao longo do tempo vou atualizando essa postagem.**
 
 Tenho duas gatinhas, Ártemis e Skadi (sim, duas deusas da caça, uma grega e a outra nórdica, respectivamente). Sempre digo que gatos não dão muito trabalho, pelo menos comparando-os aos cachorros. Só precisamos alimentar-los e limpar a caixinha de areia (tem outros pontos como brincar com eles, pentear, comprar arranhadores pra impedir que eles arranhem todos os móveis da casa... mas isso tudo são apenas detalhes).
+
+![](/assets/img/gatos/artemis-e-skadi.jpg)
 
 O cuidado da caixinha de areia é o ponto mais trabalhoso pra cuidar de gatos, ou pelo menos era, até eu descobrir que estava usando areias de baixa qualidade que tornavam o trabalho todo muito mais difícil e nojento. O básico é: 1) encher a caixa de areia; 2) uma vez por dia jogar fora o cocô e o xixi; 3) a cada 15 ou 30 dias jogar toda a areia fora, lavar as caixas e colocar areia nova.
 
@@ -24,15 +26,22 @@ A seguir vou listar e analisear cada areia focando na análise de custo-benefíc
 
 Pras minhas 2 gatas eu precisava usar 12 Kg de pipicat por mês. 1-2 vezes por semana pelo menos eu precisava encher a caixinha com mais areia pra tapar os buracos que ficavam. O pacote de 12 Kg custa em torno de **R$ 40,00 que era o meu gasto por mês**.
 
+![](/assets/img/gatos/pipicat.jpg)
+
 Eu usava essa pazinha com furos grandes abaixo. Mais adiante vou explicar que precisei trocar pra outra pazinha com furos pequenininhos. Infezlimente não tenho fotos da época que usava a pipicat.
+
+![](/assets/img/gatos/20261101_122939%281%29.jpg)
 
 ### Great Pets
 
 O pacote vem com 3,8 Kg e custa em torno de R$ 45,00 reais. Pra o mês todo eu precisei usar um pacote e meio (em torno de 6 Kg). Foi suficiente pras duas gatas pois o rendimento da areia é muito melhor. Eu conseguia jogar fora apenas o cocô e os flocos de xixi, conseguindo separá-los da areia limpa ao redor. O grande divisor de águas é que o fundo da caixinha fica bem sequinho depois que tiro os flocos de xixi, sem formar aquela lama nojenta. Então, **por mês o gasto ficou próximo de R$ 67,50**.
 
+![](/assets/img/gatos/great-pets.jpg)
 
 Como a areia é bem fininha, precisei trocar a pazinha por uma com furinhos bem pequenos pra conseguir literalmente peneirar bem e tirar os floquinhos sujos de xixi ou cocô.
 
 ### Viva verde
 
 Essa é a área mais "modinha" e também a mais vendida na Amazon. Comprei mas ainda não testei. Estou esperando dar o tempo de trocar a da Great Pets que estou usando. O preço dela costuma ser R$ 54,00 por 4 Kg mas de vez em quando aparecem umas promoções de "leve duas e cada uma sai por R$ 45,66", foi numa promoção dessas que comprei. Em breve venho atualizar o texto pra analisar como foi, se a experiência foi boa e quantos pacotes precisei usar no mês todo.
+
+![](/assets/img/gatos/Screenshot_20261101_211049_Samsung%20Browser.jpg)
