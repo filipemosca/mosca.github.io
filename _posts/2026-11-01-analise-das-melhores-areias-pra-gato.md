@@ -40,6 +40,8 @@ O pacote vem com 3,8 Kg e custa em torno de R$ 45,00 reais. Pra o mês todo eu p
 
 Como a areia é bem fininha, precisei trocar a pazinha por uma com furinhos bem pequenos pra conseguir literalmente peneirar bem e tirar os floquinhos sujos de xixi ou cocô.
 
+![](/assets/img/gatos/20261101_122930.webp)
+
 ### Viva verde
 
 Essa é a área mais "modinha" e também a mais vendida na Amazon. Comprei mas ainda não testei. Estou esperando dar o tempo de trocar a da Great Pets que estou usando. O preço dela costuma ser R$ 54,00 por 4 Kg mas de vez em quando aparecem umas promoções de "leve duas e cada uma sai por R$ 45,66", foi numa promoção dessas que comprei. Em breve venho atualizar o texto pra analisar como foi, se a experiência foi boa e quantos pacotes precisei usar no mês todo.
