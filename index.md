@@ -22,6 +22,26 @@ Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especial
       {% assign now = 'now' | date: '%s' %}
       {% assign diff = now | minus: post_time %}
       <li>
+        <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span>
+        <span class="post-info">
+          <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+          {% for tag in post.tags %}
+          <span class="tag"><i>#{{ tag | capitalize }}</i></span>
+          {% endfor %}
+          {% if diff < 2592000 %}
+          <span class="novo-badge"><i>Novo!</i></span>
+          {% endif %}
+        </span>
+      </li>
+  {% endfor %}
+</ul>
+
+<!-- <ul class="posts">
+  {% for post in site.posts %}
+      {% assign post_time = post.date | date: '%s' %}
+      {% assign now = 'now' | date: '%s' %}
+      {% assign diff = now | minus: post_time %}
+      <li>
         <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span> <span class="break"></span>
         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
         {% for tag in post.tags %}
@@ -32,7 +52,7 @@ Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especial
         {% endif %}
       </li>
   {% endfor %}
-</ul>
+</ul> -->
 
 
 <!-- <ul class="feed">

@@ -45,11 +45,6 @@ ul li::before {
   margin-right: 6px;
 }
 
-.feed li {
-  margin-bottom: 10px;
-  line-height: 1.2em;
-}
-
 .data {
   color: gray;
   font-size: 0.9em;
@@ -115,7 +110,11 @@ form {
   padding: 0;
 }
 .posts li {
+  display: grid;
   margin-bottom: 16px;
+  grid-template-columns: 6.5em 1fr; /* coluna da data | título + tags */
+  column-gap: 0.8em;
+  align-items: baseline;
 }
 .posts li::before {
   content: none !important; /* remove o bullet customizado */
@@ -132,20 +131,15 @@ form {
 
 .posts-dates {
   color: rgb(126, 122, 123);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
-/* Em telas grandes: o break não ocupa espaço => sem quebra */
-.break {
-  display: none;
-}
-
-/* Em telas pequenas: o break vira um bloco => força quebra */
 @media (max-width: 800px) {
-  .break {
-    display: block;
-  }
-  .posts-dates {
-    font-size: small;
+  .posts li {
+    grid-template-columns: 5em 1fr;
+    column-gap: 0.6em;
   }
 }
 .novo-badge {
@@ -158,8 +152,8 @@ form {
 }
 
 .tag {
-  background-color: rgba(88, 85, 102, 0.568);
-  color: rgb(243, 241, 247);
+  background-color: rgba(126, 122, 143, 0.568);
+  color: rgb(255, 255, 255);
   border-radius: 10%;
   font-size: 0.75rem;
   border-radius: 5px;
