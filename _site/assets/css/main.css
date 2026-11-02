@@ -10,20 +10,23 @@ body {
 
 .nav ul {
   display: flex;
-  flex-wrap: nowrap; /* força uma linha só (já é o padrão) */
-  gap: 0.3rem; /* espaço entre itens */
+  flex-wrap: wrap; /* força uma linha só (já é o padrão) */
+  gap: 0.2rem 0.3rem; /* espaço entre itens */
   list-style: none; /* tira as bolinhas */
   margin: 0;
   padding: 0;
-  overflow-x: auto; /* rolagem horizontal se não couber no mobile */
 }
 
 .nav li:first-child::before {
   content: none;
 }
 
+.nav li {
+  white-space: nowrap; /* não quebra "Medicina das Ruas" no meio */
+}
+
 .slogan {
-  font-size: 3.4em;
+  font-size: clamp(2.2em, 10vw, 4em); /* diminui em telas pequenas */
   margin-top: 0;
 }
 
