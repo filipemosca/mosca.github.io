@@ -1,6 +1,6 @@
 ---
 title: Como pode o teste do ACTH confirmar a insuficiência adrenal central?
-tag: endocrino
+tags: endocrino
 ---
 
 Semana passada peguei um caso de insuficiência adrenal (IA) na enfermaria e percebi que precisava estudar novamente o assunto. Li alguns materiais, dentre eles o livro do *Cecil*, e todos descrevem o **teste de estimulo do ACTH** como o teste padrão ouro pra diagnosticar a IA, tanto primária como central.

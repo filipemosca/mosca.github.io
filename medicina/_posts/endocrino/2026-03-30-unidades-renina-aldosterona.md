@@ -1,6 +1,6 @@
 ---
 title: As várias unidades da aldosterona e renina
-tag: endocrino
+tags: endocrino
 ---
 
 Esse mês tive contato com um caso suspeito de hiperaldosteronismo primário, suspeitado pela presença da tríade: hipocalemia, alcalose metabólica e hipertensão importante. Foi solicitado a dosagem sérica de aldosterona e renina e após a chegada dos resultados veio à tona a confusão das unidades para o correto cálculo da relação aldosterona/renina.

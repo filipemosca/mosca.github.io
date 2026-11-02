@@ -3,7 +3,7 @@ title: Medicina das Ruas
 layout: index
 ---
 
-<img src="/mosca-logo.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
+<img src="/mosca-net-logo.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
 
 <h1 class="slogan">Medicina das Ruas</h1>
 
@@ -17,9 +17,12 @@ Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clín
       <li>
         <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span> <span class="break"></span>
         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-          {% if diff < 2592000 %}
+        {% for tag in post.tags %}
+        <span class="tag"><i>#{{ tag | capitalize }}</i></span>
+        {% endfor %}
+        {% if diff < 2592000 %}
           <span class="novo-badge"><i>Novo!</i></span>
-          {% endif %}
+        {% endif %}
       </li>
   {% endfor %}
 </ul>

@@ -1,8 +1,6 @@
 ---
 title: Afinal, o que é Crioglobulinemia?
-tag:
-- reumato
-- hemato
+tags: [reumato, hemato]
 ---
 
 Tá aí uma doença que sempre tive muita dificuldade de entender. E então, devidir estudar de novo. Tirei essa semana pra estudar as discrasias plasmocitárias após acompanhar algumas pacientes com mieloma múltiplo.

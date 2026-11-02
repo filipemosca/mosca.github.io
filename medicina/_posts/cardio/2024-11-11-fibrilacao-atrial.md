@@ -1,6 +1,6 @@
 ---
 title: Problemas no manejo da fibrilação atrial
-tag: cardio
+tags: cardio
 ---
 
 O manejo da fibrilação atrial é um assunto que me gera uma certa angustia porque as diretrizes não são muito claras em alguns pontos e existem situações particulares em que não existe nenhuma recomendação forte. Em muitos desses casos a orientação é individualizar baseado na experiência e conhecimento do médico  assistente. Entretanto, como prosseguir quando justamente não se tem muita vivência prática e repertório de conduções de casos semelhantes?

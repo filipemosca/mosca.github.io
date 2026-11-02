@@ -1,6 +1,6 @@
 ---
 title: Anticoagulação da fibrilação atrial nova no doente crítico
-tags: [cardiologia, UTI, FA]
+tags: [cardio]
 ---
 
 Há benefício em anticoagular pacientes críticos (sépticos, principalmente) que abrem um quadro de fibrilação atrial durante o internamento?

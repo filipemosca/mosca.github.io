@@ -1,5 +1,6 @@
 ---
 title: "Qual imagem pedir na pielonefrite?"
+tags: infecto
 ---
 
 Você está diante de um paciente com pielonefrite com uma das indicações formais abaixo de realizar exame de imagem para avaliação de complicações. E aí, qual exame pedir? Pedir USG pra economizar dinheiro do plano/hospital? Pedir TC sem contraste pra poupar a função renal?

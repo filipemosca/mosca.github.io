@@ -1,6 +1,6 @@
 ---
 title: O desafio de diagnosticar a SHU atípica
-tag: hemato
+tags: hemato
 ---
 
 A síndrome hemolítico urêmica após quadros de diarreia é um assunto bem batido tanto em provas de residência como na prática diária da pediatria. Mas a condição da "SHU atípica" vem ganhando visibilidade ao longo dos anos pelas novas drogas disponíveis para tratar uma condição rara que há alguns anos nem era descrita.

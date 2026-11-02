@@ -16,6 +16,19 @@ slug:
 local_backup: true
 media_folder: assets/img
 public_folder: /assets/img
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 10000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+          width: 900
+          height: 500
+
 collections:
 - name: posts
   label: Posts
@@ -40,7 +53,7 @@ collections:
   - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
-  - {label: Publicado, name: published, widget: boolean, default: true}
+  - {label: Publicado, name: published, widget: boolean, default: false}
   table_columns:
   - title
   - { field: "{{date | date('MMM D, YYYY')}}", label: Data }
@@ -81,6 +94,7 @@ collections:
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
   - {label: Publicado, name: published, widget: boolean, default: true}
+  
 - name: qc_rascunhos
   label: Medicina · Rascunhos
   label_singular: rascunho
@@ -94,6 +108,7 @@ collections:
   - {label: Título, name: title, widget: string}
   - {label: Tags, name: tags, widget: list, required: false}
   - {label: Texto, name: body, widget: markdown}
+  
 - name: boardgames
   label: Jogos
   label_singular: página
@@ -107,14 +122,18 @@ collections:
   fields:
   - {label: Título, name: title, widget: string}
   - {label: Texto, name: body, widget: markdown}
+  
 - name: paginas
   label: Páginas
   icon: pages
-  files:
-  - name: sobre
-    label: Sobre
-    file: sobre.md
-    format: frontmatter
-    fields:
-    - {label: Título, name: title, widget: string}
-    - {label: Texto, name: body, widget: markdown}
+  label_singular: página
+  folder: /
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}

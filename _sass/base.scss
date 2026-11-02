@@ -7,6 +7,19 @@ body {
   padding: 10px;
 }
 
+.nav ul {
+  display: flex;
+  flex-wrap: nowrap;      /* força uma linha só (já é o padrão) */
+  gap: 0.3rem;            /* espaço entre itens */
+  list-style: none;       /* tira as bolinhas */
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;       /* rolagem horizontal se não couber no mobile */
+}
+.nav li:first-child::before {
+  content: none;
+}
+
 .slogan {
   font-size: 4em;
   margin-top: 0;
@@ -32,7 +45,7 @@ ul li::before {
 
 .feed li {
   margin-bottom: 10px;
-  line-height: 1.1;
+  line-height: 1.2em;
 }
 .data {
   color: gray;
@@ -46,12 +59,7 @@ ul li::before {
   font-size: 0.8em;
     font-weight: bold;
 }
-.tag {
-    background-color: #feedeb;
-    border-radius: 10%;
-    color: gray;
-    font-size: 0.8em;
-}
+
 
 
 img {
@@ -74,6 +82,7 @@ h1, h2, h3 {
 }
 p {
   margin-top: 0;
+  line-height: 1.2em;
 }
 code {
   padding: 1px 5px;
@@ -82,7 +91,6 @@ code {
   font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
   background-color: #def2ef;
 }
-
 
 form {
   margin-top: 10px;
@@ -94,14 +102,12 @@ form {
 }
 
 
-
-
 /* LISTA DE POSTAGENS!!! */
 .posts {
   list-style-type: none;
   padding: 0;
   li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   li::before {
       content: none !important; /* remove o bullet customizado */
@@ -109,15 +115,13 @@ form {
 }
 .post-title {
   font-weight: bold;
-  text-decoration: none;
-  color: blue;
 }
 .post-title:hover {
   color: #097f89;
   text-decoration: underline;
 }
 .posts-dates {
-  color: rgb(171, 9, 47);
+  color: rgb(126, 122, 123);
 }
 /* Em telas grandes: o break não ocupa espaço => sem quebra */
 .break {
@@ -138,5 +142,14 @@ form {
   font-size: 0.75rem;
   padding: 2px 6px;
   border-radius: 5px;
+  font-weight: bold;
+}
+.tag {
+  background-color: rgba(88, 85, 102, 0.568);;
+  color: rgb(243, 241, 247);
+  border-radius: 10%;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  padding: 2px 6px;
   font-weight: bold;
 }
