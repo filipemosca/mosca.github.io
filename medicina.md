@@ -1,9 +1,11 @@
 ---
-title: Quadro Clínico
+title: Medicina das Ruas
 layout: index
 ---
 
-<img src="/medicina/quadroclinico.png" alt="" style="max-width: 500px;">
+<img src="/mosca-logo.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
+
+<h1 class="slogan">Medicina das Ruas</h1>
 
 Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clínico em formação. Esse blog não pretensão de servir como aconselhamento à população geral. O objetivo aqui é contribuir para a educação médica.
 
@@ -21,9 +23,3 @@ Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clín
       </li>
   {% endfor %}
 </ul>
-
-## Links úteis
-
-- [Curso de digitação](https://www.edclub.com/pt-BR/library/bosque-da-digitacao) -- acredite, agiliza sua vida (e é gratuito).
-- [Criador de acrônimos](https://remember.shinyapps.io/remember_shiny_tool/) -- uso pra criar flashcards.
-- [Zbib](https://zbib.org/) -- uso pra formatar referências.

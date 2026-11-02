@@ -3,7 +3,9 @@ layout: index
 title: "Blog do Mosca"
 ---
 
-<img src="/blog-do-mosca.png" alt="" style="max-width: 500px;">
+<img src="/mosca-logo.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
+
+<h1 class="slogan">Blog do Mosca</h1>
 
 Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especialização) de clínica médica. Esse é meu espaço na internet para compartilhar meus hobbies e escrever sobre a medicina.
 

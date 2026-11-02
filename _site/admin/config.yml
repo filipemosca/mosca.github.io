@@ -1,0 +1,120 @@
+backend:
+  name: github
+  repo: filipemosca/mosca.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.moxk.workers.dev
+site_url: https://mosca.net.br
+display_url: https://mosca.net.br
+locale: pt
+app_title: MoscaPanel
+logo:
+  src: /favicon-admin.png
+  show_in_header: true
+slug:
+  encoding: ascii
+  clean_accents: true
+local_backup: true
+media_folder: assets/img
+public_folder: /assets/img
+collections:
+- name: posts
+  label: Posts
+  icon: article
+  label_singular: post
+  folder: _posts
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  view_filters:
+  - {label: Canetas, field: tags, pattern: 'Canetas'}
+  - {label: Eletrônica, field: tags, pattern: 'Eletronica'}
+  - {label: Estudos, field: tags, pattern: 'Estudos'}
+  - {label: Futebol, field: tags, pattern: 'Futebol'}
+  - {label: Linux, field: tags, pattern: 'Linux'}
+  - {label: Livros, field: tags, pattern: 'Livros'}
+  - {label: Tech, field: tags, pattern: 'Tech'}
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}
+  table_columns:
+  - title
+  - { field: "{{date | date('MMM D, YYYY')}}", label: Data }
+  - tags
+  - published
+  
+- name: medicina
+  label: Medicina
+  icon: stethoscope
+  label_singular: post
+  folder: medicina/_posts
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}}'
+  nested:
+    depth: 2
+    subfolders: false
+  view_groups:
+  - {label: Tag, field: tags}
+  view_filters:
+  - {label: Cardio, field: tags, pattern: 'Cardio'}
+  - {label: Dermato, field: tags, pattern: 'Dermato'}
+  - {label: Endocrino, field: tags, pattern: 'Endocrino'}
+  - {label: Hemato, field: tags, pattern: 'Hemato'}
+  - {label: Infecto, field: tags, pattern: 'Infecto'}
+  - {label: Reumato, field: tags, pattern: 'Reumato'}
+  - {label: UTI, field: tags, pattern: 'UTI'}
+  table_columns:
+  - title
+  - date
+  - tags
+  - published
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Data, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', default: '{{now}}', required: false}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+  - {label: Publicado, name: published, widget: boolean, default: true}
+- name: qc_rascunhos
+  label: Medicina · Rascunhos
+  label_singular: rascunho
+  folder: medicina/_drafts
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Tags, name: tags, widget: list, required: false}
+  - {label: Texto, name: body, widget: markdown}
+- name: boardgames
+  label: Jogos
+  label_singular: página
+  folder: boardgames
+  extension: md
+  format: frontmatter
+  create: false
+  delete: false
+  slug: '{{slug}}'
+  summary: '{{title}}'
+  fields:
+  - {label: Título, name: title, widget: string}
+  - {label: Texto, name: body, widget: markdown}
+- name: paginas
+  label: Páginas
+  icon: pages
+  files:
+  - name: sobre
+    label: Sobre
+    file: sobre.md
+    format: frontmatter
+    fields:
+    - {label: Título, name: title, widget: string}
+    - {label: Texto, name: body, widget: markdown}
