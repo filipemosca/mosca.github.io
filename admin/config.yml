@@ -137,3 +137,21 @@ collections:
   - {label: Título, name: title, widget: string}
   - {label: Texto, name: body, widget: markdown}
   - {label: Publicado, name: published, widget: boolean, default: true}
+
+- name: configuracoes
+  label: Configurações
+  icon: settings
+  files:
+  - name: nav
+    label: Barra de navegação
+    file: _data/nav.yml
+    format: yaml
+    fields:
+    - label: Links
+      name: links
+      widget: list
+      root: true
+      summary: '{{fields.name}} → {{fields.link}}'
+      fields:
+      - {label: Título, name: name, widget: string}
+      - {label: Endereço, name: link, widget: string, hint: 'Ex.: /sobre ou https://...'}
