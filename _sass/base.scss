@@ -56,7 +56,10 @@ ul li::before {
 
 img {
   max-width: 900px;
-  width: 100%;
+  max-width: 100%;
+  max-height: 450px;
+  display: block;
+  margin: 0 auto;
 }
 
 dt {font-weight: bold;}
