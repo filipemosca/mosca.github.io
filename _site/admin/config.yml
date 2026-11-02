@@ -135,6 +135,7 @@ collections:
   summary: '{{title}}'
   fields:
   - {label: Título, name: title, widget: string}
+  - {label: Layout, name: layout, widget: select, options: [default, index, page], default: page, required: false}
   - {label: Texto, name: body, widget: markdown}
   - {label: Publicado, name: published, widget: boolean, default: true}
 

@@ -243,11 +243,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="503.10647"
-     inkscape:cy="931.25963"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="473.24999"
+     inkscape:cy="970.99997"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -1045,7 +1045,7 @@
          ry="1.120116" />
     </g>
     <rect
-       style="fill:#c8ab37;fill-opacity:1;stroke:none;stroke-width:3.01892;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:3.01892;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect50"
        width="43.369705"
        height="45.025997"
@@ -1061,12 +1061,12 @@
        id="path65"
        sodipodi:nodetypes="csc" />
     <rect
-       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#df8825;stroke-width:0.794368;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#df8825;stroke-width:0.831115;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        id="rect52"
-       width="13.129023"
-       height="13.690141"
-       x="93.492798"
-       y="249.02519" />
+       width="14.410492"
+       height="13.653393"
+       x="92.852066"
+       y="249.04356" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.8097px;line-height:1.25;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';letter-spacing:-0.190873px;word-spacing:0.0136338px;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.120243"

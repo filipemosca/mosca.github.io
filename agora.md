@@ -1,6 +1,7 @@
 ---
 title: Agora
 published: true
+layout: page
 ---
 
 Essa página é constantemente atualizada para refletir o que venho fazendo agora. É um compilado dos meus interesses e atividades atuais:
