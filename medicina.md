@@ -1,6 +1,7 @@
 ---
 title: Medicina das Ruas
 layout: index
+published: true
 ---
 
 <img src="/dr-mosca.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
@@ -8,6 +9,8 @@ layout: index
 <h1 class="slogan">Medicina das Ruas</h1>
 
 Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clínico em formação. Esse blog não pretensão de servir como aconselhamento à população geral. O objetivo aqui é contribuir para a educação médica.
+
+[Buscador de revisões no PubMed](/busca-pubmed)
 
 <ul class="posts">
   {% for post in site.categories.medicina %}
