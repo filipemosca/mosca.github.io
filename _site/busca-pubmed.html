@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Buscador de artigos de revisão no PubMed</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Cloudflare Web Analytics -->
+    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8e4fbc823b3c43678d55472287d6bfba"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </head>
+  <body>
+    <div class="nav">
+  <ul>
+    
+    <li><a href="/" >Blog
+    </a></li>
+    
+    <li><a href="/medicina" >Medicina
+    </a></li>
+    
+    <li><a href="/agora" >Agora
+    </a></li>
+    
+    <li><a href="/sobre" >Sobre
+    </a></li>
+    
+    <li><a rel="me" href="https://mastodon.social/@filipemosca">Mastodon</a></li>
+  </ul>
+</div>
+
+    <h1>Buscador de artigos de revisão no PubMed</h1>
+
+    
+
+    <p>Essa ferramenta busca artigos de revisão nas revistas: NEJM, Lancet, JAMA, BMJ e Annals of Internal Medicine. É só digitar o nome de um assunto, em inglês, na barra abaixo e dar enter.</p>
+
+<center>
+<form onsubmit="buscarPubmed(); return false;">
+<input type="text" id="termo" placeholder="Digite o termo (ex: pneumonia)" size="40" required="" />
+<button type="submit">Buscar</button>
+</form>
+
+<br />
+</center>
+
+<script>
+function buscarPubmed() {
+    const termo = document.getElementById("termo").value.trim();
+    if (!termo) return;
+
+    const baseUrl = "https://pubmed.ncbi.nlm.nih.gov/?term=";
+
+    const filtros = '+AND+('
+        + '"N+Engl+J+Med"[Journal]+OR+'
+        + '"Lancet"[Journal]+OR+'
+        + '"JAMA"[Journal]+OR+'
+        + '"Ann+Intern+Med"[Journal]+OR+'
+        + '"BMJ"[Journal]+OR+'
+        + '"Am+Fam+Physician"[Journal]+OR+'
+        + '"Nat+Rev*"[Journal]'
+        + ')+AND+(Review[ptyp])&sort=date';
+
+    const url = baseUrl + encodeURIComponent(termo) + filtros;
+
+    window.open(url, "_blank");
+}
+</script>
+
+
+
+    <br/>
+    <hr/>
+    <span class="rodape" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">mosca.net.br &copy; 2025-2999
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"
+    rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0</a></span><br />
+    </span>
+  </body>
+</html>

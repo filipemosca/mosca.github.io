@@ -22,13 +22,16 @@ Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clín
       <li>
         <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span>
         <span class="post-info">
-          <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
           {% for tag in post.tags %}
-          <span class="tag"><i>#{{ tag | capitalize }}</i></span>
+            {% assign chave = tag | downcase %}
+            {% assign emoji = site.data.tags[chave] %}
+            {% if emoji %}
+              <span class="tag-emoji" title="{{ tag | capitalize }}" aria-label="{{ tag | capitalize }}">{{ emoji }}</span>
+            {% else %}
+              <span class="tag">🏷️</span>
+            {% endif %}
           {% endfor %}
-          {% if diff < 2592000 %}
-          <span class="novo-badge"><i>Novo!</i></span>
-          {% endif %}
+          <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
         </span>
       </li>
   {% endfor %}

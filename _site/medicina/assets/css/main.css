@@ -139,6 +139,10 @@ form {
   font-variant-numeric: tabular-nums;
 }
 
+.tag-emoji {
+  cursor: help;
+}
+
 @media (max-width: 800px) {
   .posts li {
     grid-template-columns: 5em 1fr;
@@ -162,6 +166,14 @@ form {
   border-radius: 5px;
   padding: 2px 6px;
   font-weight: bold;
+}
+
+.utterances {
+  max-width: 100%;
+}
+
+.rodape {
+  float: right;
 }
 
 /*# sourceMappingURL=main.css.map */

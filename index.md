@@ -18,57 +18,25 @@ Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especial
 
 <ul class="posts">
   {% for post in site.posts %}
-      {% assign post_time = post.date | date: '%s' %}
-      {% assign now = 'now' | date: '%s' %}
-      {% assign diff = now | minus: post_time %}
       <li>
         <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span>
         <span class="post-info">
+          {% if post.categories contains "medicina" %}
+  <span class="tag-emoji" title="Medicina" aria-label="Medicina">{{ site.data.tags.medicina | default: "🩺" }}</span>
+{% else %}
+  {% for tag in post.tags %}
+    {% assign chave = tag | downcase %}
+    {% assign emoji = site.data.tags[chave] %}
+    {% if emoji %}
+    <span class="tag-emoji" title="{{ tag | capitalize }}" aria-label="{{ tag | capitalize }}">{{ emoji }}</span>
+    {% else %}
+    <span class="tag"><i>#{{ tag | capitalize }}</i></span>
+    {% endif %}
+  {% endfor %}
+{% endif %}
           <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-          {% for tag in post.tags %}
-          <span class="tag"><i>#{{ tag | capitalize }}</i></span>
-          {% endfor %}
-          {% if diff < 2592000 %}
-          <span class="novo-badge"><i>Novo!</i></span>
-          {% endif %}
+
         </span>
       </li>
   {% endfor %}
 </ul>
-
-<!-- <ul class="posts">
-  {% for post in site.posts %}
-      {% assign post_time = post.date | date: '%s' %}
-      {% assign now = 'now' | date: '%s' %}
-      {% assign diff = now | minus: post_time %}
-      <li>
-        <span class="posts-dates">{{ post.date | date: "%d/%m/%Y" }}</span> <span class="break"></span>
-        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-        {% for tag in post.tags %}
-        <span class="tag"><i>#{{ tag | capitalize }}</i></span>
-        {% endfor %}
-        {% if diff < 2592000 %}
-          <span class="novo-badge"><i>Novo!</i></span>
-        {% endif %}
-      </li>
-  {% endfor %}
-</ul> -->
-
-
-<!-- <ul class="feed">
-  {% for post in site.posts %}
-      <li>
-        <span class="data">{{ post.date | date: "%d/%m/%Y" }}</span>
-        {% if post.categories.size > 0 %}
-        {% for category in post.categories %}
-        <span class="categoria">#{{ category | capitalize }}</span>
-        {% endfor %}
-        {% endif %} 
-        {% for tag in post.tags %}
-        <span class="tag">#{{ tag | capitalize  }}</span>
-         {% endfor %}
-        <br> 
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-  {% endfor %}
-</ul> -->
