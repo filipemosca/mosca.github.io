@@ -10,7 +10,9 @@ published: true
 
 Blog de um clínico para clínicos e estudantes. Escrito por Filipe Mosca, clínico em formação. Esse blog não pretensão de servir como aconselhamento à população geral. O objetivo aqui é contribuir para a educação médica.
 
-[Buscador de revisões no PubMed](/busca-pubmed)
+🔎📄 [Buscador de revisões no PubMed](/busca-pubmed)
+
+### Postagens
 
 <ul class="posts">
   {% for post in site.categories.medicina %}
