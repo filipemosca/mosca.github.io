@@ -1,7 +1,12 @@
 ---
-layout: default
-title: "Busca filtrada no PubMed"
+title: Busca de artigos de revisão no PubMed
+layout: page
+published: true
 ---
+
+Essa ferramenta busca artigos de revisão nas revistas: NEJM, Lancet, JAMA, BMJ e Annals of Internal Medicine. É só digitar o nome de um assunto, em inglês, na barra abaixo e dar enter.
+
+\<br>
 
 <center>
 <form onsubmit="buscarPubmed(); return false;">
@@ -10,8 +15,6 @@ title: "Busca filtrada no PubMed"
 </form>
 
 <br>
-
-<p>Essa ferramenta busca artigos de revisão nas revistas: NEJM, Lancet, JAMA, BMJ e Annals of Internal Medicine.</p>
 </center>
 
 <script>
@@ -36,7 +39,3 @@ function buscarPubmed() {
     window.open(url, "_blank");
 }
 </script>
-
-
-
-
