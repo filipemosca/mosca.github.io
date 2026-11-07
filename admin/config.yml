@@ -3,8 +3,8 @@ backend:
   repo: filipemosca/mosca.github.io
   branch: main
   base_url: https://sveltia-cms-auth.moxk.workers.dev
-site_url: https://mosca.net.br
-display_url: https://mosca.net.br
+site_url: https://mosca.me
+display_url: https://mosca.me
 locale: pt
 app_title: MoscaPanel
 logo:
