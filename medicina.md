@@ -4,7 +4,7 @@ layout: index
 published: true
 ---
 
-<img src="/dr-mosca.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
+<img src="/dr-mosca-me.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
 
 <h1 class="slogan">Medicina das Ruas</h1>
 

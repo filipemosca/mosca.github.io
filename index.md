@@ -3,7 +3,7 @@ layout: index
 title: "Blog do Mosca"
 ---
 
-<img src="/mosca-net-logo.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
+<img src="/mosca-me.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
 
 <h1 class="slogan">Blog do Mosca</h1>
 
