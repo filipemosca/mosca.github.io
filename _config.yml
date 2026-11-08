@@ -1,4 +1,4 @@
-url: "mosca.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mosca.me" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Blog do Mosca" # the name of your site, e.g. ACME Corp.
 
@@ -14,3 +14,14 @@ defaults:
       categories: ["medicina"]
 
 permalink: /:title
+
+
+plugins:
+  - jekyll-feed
+
+description: "Blog do Filipe Mosca sobre hobbies e medicina."
+lang: pt-BR
+
+feed:
+  categories:
+    - medicina
