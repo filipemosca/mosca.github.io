@@ -1,6 +1,7 @@
 ---
+title: Blog do Mosca
 layout: index
-title: "Blog do Mosca"
+published: true
 ---
 
 <img src="/mosca-me.png" alt="" style="width: 200px; max-width: 30%; float: right; padding: 10px;">
@@ -11,7 +12,8 @@ Olá, eu sou Filipe! Sou médico,  atualmente realizando a residência (especial
 
 - [Jogos de tabuleiro](/boardgames/jogos-tabuleiro)
 - [Jogos de baralho](/boardgames/baralho)
-- [Criador de acrônimos](https://acronimos.mosca.me) para mnemônicos
+- 🔣 [Símbolos](/simbolos) para copiar
+- 🔤 [Criador de acrônimos](https://acronimos.mosca.me) para mnemônicos
 - Aprendendo a digitar mais rápido: [TypingClub](https://www.edclub.com/sportal/program-21.game)
 
 ## Todas as postagens
