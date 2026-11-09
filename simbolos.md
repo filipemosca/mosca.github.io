@@ -1,0 +1,339 @@
+---
+title: Símbolos
+layout: page
+published: true
+---
+
+\<p>Clique em um símbolo para copiá-lo.\</p>
+
+\<div id="simbolos">\</div>
+
+\<div id="sim-aviso" role="status" aria-live="polite">\</div>
+
+\<style>
+
+  .sim-grupo h2 {
+
+    font-size: 1.2em;
+
+    margin: 1.2em 0 0.5em;
+
+  }
+
+  .sim-grade {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(4.2em, 1fr));
+
+    gap: 6px;
+
+  }
+
+  .sim-botao {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 2px;
+
+    min-height: 4em;
+
+    padding: 6px 2px;
+
+    background: #fff;
+
+    border: 1px solid #d8d4c8;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    color: black;
+
+  }
+
+  .sim-botao:hover {
+
+    border-color: #097f89;
+
+    background: #eef8f8;
+
+  }
+
+  .sim-botao:focus-visible {
+
+    outline: 2px solid #097f89;
+
+    outline-offset: 1px;
+
+  }
+
+  .sim-botao.copiado {
+
+    background: #e3f6e0;
+
+    border-color: #3a9a3a;
+
+  }
+
+  .sim-char {
+
+    font-size: 1.6em;
+
+    line-height: 1.1;
+
+  }
+
+  .sim-nome {
+
+    font-size: 0.65em;
+
+    color: #6b6760;
+
+    text-align: center;
+
+    line-height: 1.1;
+
+  }
+
+  #sim-aviso {
+
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    background: #222;
+
+    color: #fff;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    font-size: 0.95em;
+
+    opacity: 0;
+
+    transition: opacity 0.2s;
+
+    pointer-events: none;
+
+  }
+
+  #sim-aviso.visivel {
+
+    opacity: 1;
+
+  }
+
+\</style>
+
+\<script>
+
+  // Para adicionar um símbolo: ["símbolo", "nome curto"]
+
+  const SIMBOLOS = {
+
+    "Setas": [
+
+      ["→", "direita"], ["←", "esquerda"], ["↑", "cima"], ["↓", "baixo"],
+
+      ["↔", "dupla"], ["↕", "vertical"], ["↗", "sobe"], ["↘", "desce"],
+
+      ["⇒", "implica"], ["⇐", "dupla esq."], ["⇔", "equivale"], ["⇑", "dupla cima"],
+
+      ["⇓", "dupla baixo"], ["↑↑", "aumentado"], ["↓↓", "reduzido"], ["➜", "seta"],
+
+      ["↩", "retorno"], ["↻", "ciclo"]
+
+    ],
+
+    "Pontuação": [
+
+      ["—", "travessão"], ["–", "meia-risca"], ["…", "reticências"], ["«", "aspas esq."],
+
+      ["»", "aspas dir."], ["“", "aspas abre"], ["”", "aspas fecha"], ["‘", "aspa simples"],
+
+      ["’", "apóstrofo"], ["•", "marcador"], ["·", "ponto médio"], ["§", "parágrafo"],
+
+      ["¶", "pilcrow"], ["†", "adaga"], ["‡", "adaga dupla"], ["′", "linha"],
+
+      ["″", "linha dupla"], ["¿", "interrog. inv."], ["¡", "exclam. inv."]
+
+    ],
+
+    "Frações": [
+
+      ["½", "meio"], ["⅓", "um terço"], ["⅔", "dois terços"], ["¼", "um quarto"],
+
+      ["¾", "três quartos"], ["⅕", "um quinto"], ["⅖", "dois quintos"], ["⅗", "três quintos"],
+
+      ["⅘", "quatro quintos"], ["⅙", "um sexto"], ["⅚", "cinco sextos"], ["⅛", "um oitavo"],
+
+      ["⅜", "três oitavos"], ["⅝", "cinco oitavos"], ["⅞", "sete oitavos"], ["⁄", "barra fração"]
+
+    ],
+
+    "Matemática": [
+
+      ["±", "mais ou menos"], ["×", "vezes"], ["÷", "dividido"], ["≈", "aprox."],
+
+      ["≠", "diferente"], ["≤", "menor igual"], ["≥", "maior igual"], ["<", "menor"],
+
+      [">", "maior"], ["∞", "infinito"], ["√", "raiz"], ["∑", "somatório"],
+
+      ["Δ", "delta"], ["π", "pi"], ["°", "grau"], ["%", "porcento"],
+
+      ["‰", "por mil"], ["∝", "proporcional"], ["≡", "idêntico"], ["∴", "portanto"]
+
+    ],
+
+    "Sobrescrito e subscrito": [
+
+      ["⁰", "sobre 0"], ["¹", "sobre 1"], ["²", "sobre 2"], ["³", "sobre 3"],
+
+      ["⁴", "sobre 4"], ["⁵", "sobre 5"], ["⁶", "sobre 6"], ["⁷", "sobre 7"],
+
+      ["⁸", "sobre 8"], ["⁹", "sobre 9"], ["⁺", "sobre +"], ["⁻", "sobre −"],
+
+      ["₀", "sub 0"], ["₁", "sub 1"], ["₂", "sub 2"], ["₃", "sub 3"],
+
+      ["₄", "sub 4"], ["₅", "sub 5"], ["₆", "sub 6"], ["₇", "sub 7"],
+
+      ["₈", "sub 8"], ["₉", "sub 9"], ["₊", "sub +"], ["₋", "sub −"]
+
+    ],
+
+    "Medicina e ciência": [
+
+      ["α", "alfa"], ["β", "beta"], ["γ", "gama"], ["δ", "delta"],
+
+      ["ε", "épsilon"], ["κ", "kappa"], ["λ", "lambda"], ["μ", "micro"],
+
+      ["σ", "sigma"], ["Ω", "ômega"], ["℃", "celsius"], ["♂", "masculino"],
+
+      ["♀", "feminino"], ["℞", "receita"], ["Ø", "ausente"], ["⚕", "medicina"],
+
+      ["✓", "presente"], ["✗", "ausente"]
+
+    ],
+
+    "Outros": [
+
+      ["©", "copyright"], ["®", "registrado"], ["™", "marca"], ["€", "euro"],
+
+      ["£", "libra"], ["¥", "iene"], ["№", "número"], ["ª", "ordinal fem."],
+
+      ["º", "ordinal masc."], ["★", "estrela"], ["☆", "estrela vazia"], ["♥", "coração"],
+
+      ["☐", "caixa"], ["☑", "caixa marcada"], ["⌘", "command"], ["⏎", "enter"]
+
+    ]
+
+  };
+
+  const container = document.getElementById("simbolos");
+
+  const aviso = document.getElementById("sim-aviso");
+
+  let timerAviso;
+
+  for (const [grupo, itens] of Object.entries(SIMBOLOS)) {
+
+    const secao = document.createElement("section");
+
+    secao.className = "sim-grupo";
+
+    const titulo = document.createElement("h2");
+
+    titulo.textContent = grupo;
+
+    const grade = document.createElement("div");
+
+    grade.className = "sim-grade";
+
+    for (const [simbolo, nome] of itens) {
+
+      const botao = document.createElement("button");
+
+      botao.type = "button";
+
+      botao.className = "sim-botao";
+
+      botao.title = "Copiar " + nome;
+
+      botao.setAttribute("aria-label", "Copiar " + nome + ": " + simbolo);
+
+      botao.innerHTML = '\<span class="sim-char">\</span>\<span class="sim-nome">\</span>';
+
+      botao.querySelector(".sim-char").textContent = simbolo;
+
+      botao.querySelector(".sim-nome").textContent = nome;
+
+      botao.addEventListener("click", () => copiar(simbolo, botao));
+
+      grade.appendChild(botao);
+
+    }
+
+    secao.append(titulo, grade);
+
+    container.appendChild(secao);
+
+  }
+
+  async function copiar(texto, botao) {
+
+    try {
+
+      await navigator.clipboard.writeText(texto);
+
+    } catch (e) {
+
+      // Alternativa para navegadores sem a API de área de transferência
+
+      const campo = document.createElement("textarea");
+
+      campo.value = texto;
+
+      campo.style.position = "fixed";
+
+      campo.style.opacity = "0";
+
+      document.body.appendChild(campo);
+
+      campo.select();
+
+      document.execCommand("copy");
+
+      campo.remove();
+
+    }
+
+    botao.classList.add("copiado");
+
+    setTimeout(() => botao.classList.remove("copiado"), 600);
+
+    aviso.textContent = "Copiado: " + texto;
+
+    aviso.classList.add("visivel");
+
+    clearTimeout(timerAviso);
+
+    timerAviso = setTimeout(() => aviso.classList.remove("visivel"), 1200);
+
+  }
+
+\</script>
